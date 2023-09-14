@@ -1,13 +1,39 @@
-<h1>Eventos do Componente</h1>
+<h3>Eventos</h3>
+<hr>
 
+<form action="" class="form-imline">
+  <div class="form-group mb2">
+    <input type="text" class="form-control mr2" placeholder="buscar">
+    <button class="btn btn-outline-succes">Buscar</button>
+  </div>
+</form>
 
-
- <div *ngFor="let evento of eventos">
-  <p>
-    <b>Evento: </b> {{evento.tema}}<br>
-    <b>Local: </b> {{evento.local}}</p>
-    <hr>
-
- </div>
-
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>#</th>
+      <th>image</th>
+      <th>Tema</th>
+      <th>Local</th>
+      <th>Data</th>
+      <th>Participantes</th>
+      <th>Lote</th>
+      <th>Opções</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let evento of eventos">
+    <td>{{evento.eventoId}}</td>
+    <td>
+      <img src="{{evento.imagemUrl}}" alt="" width="50px">
+    </td>
+    <td>{{evento.tema}}</td>
+    <td>{{evento.local}}</td>
+    <td>{{evento.dataEvento}}</td>
+    <td>{{evento.qtdPessoas}}</td>
+    <td>{{evento.lote}}</td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
 

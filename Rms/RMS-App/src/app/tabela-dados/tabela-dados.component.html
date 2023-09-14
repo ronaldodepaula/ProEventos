@@ -1,0 +1,32 @@
+<table   border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Filial p</th>
+      <th>Ean</th>
+      <th>Emb. Transf</th>
+      <th>Tipo Embalagem</th>
+      <th>Est. Loja</th>
+      <th>Est. CD</th>
+      <th>Sai. Média</th>
+      <th>Total Distribuição</th>
+      <th>Soma Saída Média</th>
+      <th>%</th>
+      <th>Sgestão de Pedido</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data">
+      <td>{{ item.COD_LOJA }}</td>
+      <td>{{ item.EAN13 }}</td>
+      <td>{{ item.GIT_EMB_TRANSF }}</td>
+      <td>{{ item.GIT_TPO_EMB_TRANSF }}</td>
+      <td>{{ item.ESTOQUE_LJ }}</td>
+      <td>{{ item.ESTOQUE_CD }}</td>
+      <td>{{ item.SAI_MEDIA_UN }}</td>
+      <td>{{ item.TOTAL_DISTRIBUICAO }}</td>
+      <td>{{ item.TOTAL_SM }}</td>
+      <td>{{ item.PERCENTUAL }}</td>
+      <td>{{ item.QTD_LOJA_PEDIDA }}</td>
+    </tr>
+  </tbody>
+</table>

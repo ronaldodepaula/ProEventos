@@ -8,20 +8,26 @@ import { EventosComponent } from './eventos/eventos.component';
 import { PalestrantesComponent } from './palestrantes/palestrantes.component';
 import { RodutosComponent } from './rodutos/rodutos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavComponent } from './nav/nav.component';
+
+
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     EventosComponent,
       PalestrantesComponent,
-      RodutosComponent
-
+      RodutosComponent,
+      NavComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CollapseModule
 
   ],
   providers: [],
